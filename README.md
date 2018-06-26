@@ -57,7 +57,8 @@ easy to customize.
 ```
 
 ### Menu Button 
-1. To create a menu button add a checkbox and label before the first menu list. Make sure they have the class `.jm-menu-btn`:
+1. To create a menu button add a checkbox and label before the first menu 
+list. Make sure they have the class `.jm-menu-btn`:
 ```html
 <nav class="jmenu">
   <input type="checkbox" id="menu-btn" class="jm-menu-btn">
@@ -104,8 +105,8 @@ easy to customize.
 ### Typography
 
 JMenu is designed to pick up typographic styles from your website's
-stylesheet. By default the menu items will inherit their parent container's style. You can 
-change that by overriding the `.jmenu` class.
+stylesheet. By default the menu items will inherit their parent container's 
+style. You can change that by overriding the `.jmenu` class.
 
 ```css
 .jmenu {
