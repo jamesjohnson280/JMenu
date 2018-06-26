@@ -57,7 +57,7 @@ easy to customize.
 ```
 
 ### Menu Button 
-1. To add a menu button add a checkbox and label before the first menu list. Make sure they have the class `.jm-menu-btn`:
+1. To create a menu button add a checkbox and label before the first menu list. Make sure they have the class `.jm-menu-btn`:
 ```html
 <nav class="jmenu">
   <input type="checkbox" id="menu-btn" class="jm-menu-btn">
