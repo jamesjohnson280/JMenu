@@ -7,13 +7,13 @@ easy to customize.
 ### A Simple Menu
 
 1. Add the JMenu stylesheet to the header of your site:
-```
+```html
 <link rel="stylesheet" href="css/jmenu.css">
 ```
 
 2. Add the basic markup for your menu:
 
-```
+```html
 <nav class="jmenu">
   <ul>
     <li><a href="#">Home</a></li>
@@ -32,7 +32,7 @@ JMenu is designed to pick up typographic styles from your website's
 stylesheet. By default the menu items will inherit the `body` style. You can 
 change that by overriding the `.jmenu` class.
 
-```
+```css
 .jmenu {
   font: bold 1.125em 'Helvetica', sans-serif;
 }
@@ -41,7 +41,7 @@ change that by overriding the `.jmenu` class.
 To change the color of the menu item links, simply override `.jmenu a` with 
 new colors.
 
-```
+```css
 .jmenu a {
   color: coral;
 }
@@ -55,7 +55,7 @@ new colors.
 
 To change the look of the menu bar override the background style of the
 `.jmenu` class.
-``` 
+```css 
 .jmenu {
   background: #ccc; /* Changes menu bar to a light gray */
 }
