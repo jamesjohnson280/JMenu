@@ -60,7 +60,7 @@ label.jm-menu-btn:hover {
 }
 
 /* Submenu Items */
-.jmenu ul ul  {
+.jmenu ul ul {
   display: none; /* Hidden by default */
 }
 
@@ -86,7 +86,7 @@ label.jm-menu-btn:hover {
 }
 
 .jm-dropdown ul a:hover,
-.jm-dropdown:hover ul a:hover{
+.jm-dropdown:hover ul a:hover {
   color: #000; /* Black*/
 }
 
