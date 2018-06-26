@@ -59,6 +59,16 @@
   color: #000; /* Black*/
 }
 
+/* Tertiary+ Menu Items */
+.jmenu .jm-dropdown ul ul {
+  border-bottom: 1px #ccc solid; /* Light gray */
+  border-top: 1px #ccc solid;
+  box-shadow: none;
+  margin-bottom: 16px;
+  max-width: 100%;
+  position: relative;
+}
+
 @media (min-width: 768px) {
   
   /* Menu items */
