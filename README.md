@@ -56,6 +56,49 @@ easy to customize.
 </nav>
 ```
 
+### Menu Button 
+1. To add a menu button add a checkbox and label before the first menu list. Make sure they have the class `.jm-menu-btn`:
+```html
+<nav class="jmenu">
+  <input type="checkbox" id="menu-btn" class="jm-menu-btn">
+  <label for="menu-btn" class="jm-menu-btn">Menu</label>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li class="jm-dropdown">
+      <a href="#">Categories</a>
+      <ul>
+        <li><a href="#">Apples</a></li>
+        <li><a href="#">Bananas and Pears</a></li>
+        <li><a href="#">Oranges</a></li>
+      </ul>
+    </li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+```
+
+2. Add the `.jm-collapse` class to the menu list:
+```html
+<nav class="jmenu">
+  <input type="checkbox" id="menu-btn" class="jm-menu-btn">
+  <label for="menu-btn" class="jm-menu-btn">Menu</label>
+  <ul class="jm-collapse">
+    <li><a href="#">Home</a></li>
+    <li class="jm-dropdown">
+      <a href="#">Categories</a>
+      <ul>
+        <li><a href="#">Apples</a></li>
+        <li><a href="#">Bananas and Pears</a></li>
+        <li><a href="#">Oranges</a></li>
+      </ul>
+    </li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+```
+
 ## Customization
 
 ### Typography
