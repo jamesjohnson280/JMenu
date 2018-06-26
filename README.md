@@ -56,13 +56,57 @@ easy to customize.
 </nav>
 ```
 
+### Menu Button 
+1. To create a menu button add a checkbox and label before the first menu 
+list. Make sure they have the class `.jm-menu-btn`:
+```html
+<nav class="jmenu">
+  <input type="checkbox" id="menu-btn" class="jm-menu-btn">
+  <label for="menu-btn" class="jm-menu-btn">Menu</label>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li class="jm-dropdown">
+      <a href="#">Categories</a>
+      <ul>
+        <li><a href="#">Apples</a></li>
+        <li><a href="#">Bananas and Pears</a></li>
+        <li><a href="#">Oranges</a></li>
+      </ul>
+    </li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+```
+
+2. Add the `.jm-collapse` class to the menu list:
+```html
+<nav class="jmenu">
+  <input type="checkbox" id="menu-btn" class="jm-menu-btn">
+  <label for="menu-btn" class="jm-menu-btn">Menu</label>
+  <ul class="jm-collapse">
+    <li><a href="#">Home</a></li>
+    <li class="jm-dropdown">
+      <a href="#">Categories</a>
+      <ul>
+        <li><a href="#">Apples</a></li>
+        <li><a href="#">Bananas and Pears</a></li>
+        <li><a href="#">Oranges</a></li>
+      </ul>
+    </li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+```
+
 ## Customization
 
 ### Typography
 
 JMenu is designed to pick up typographic styles from your website's
-stylesheet. By default the menu items will inherit the `body` style. You can 
-change that by overriding the `.jmenu` class.
+stylesheet. By default the menu items will inherit their parent container's 
+style. You can change that by overriding the `.jmenu` class.
 
 ```css
 .jmenu {
@@ -83,6 +127,19 @@ new colors.
 }
 ```
 
+To change the colors of dropdown links it's a little more involved. 
+```css
+.jm-dropdown ul a,
+.jm-dropdown:hover ul a {
+  color: #0072bc; /* Blue */
+}
+
+.jm-dropdown ul a:hover,
+.jm-dropdown:hover ul a:hover {
+  color: #000; /* Black*/
+}
+```
+
 ### Menu Bar
 
 To change the look of the menu bar override the background style of the
@@ -93,12 +150,17 @@ To change the look of the menu bar override the background style of the
 }
 ```
 
+### Dropdowns
+
+Override the `.jm-dropown ul` class to change the styling of the dropdowns.
+
+
 ## Compatibility
 
 JMenu has been tested in the following browsers:
-* Chrome 67
+* Chrome 67 (Windows, Mac OS and Android)
 * Firefox 60
-* Safari
-* Internet Explorer 10
+* Safari 11
+* Internet Explorer 10 (Mac OS and iOS)
 * Edge 42
 

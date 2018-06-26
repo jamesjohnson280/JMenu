@@ -9,8 +9,39 @@
   line-height: 1;
 }
 
+/* Menu Button */
+input.jm-menu-btn {
+  display: none; /* Hide the checkbox */
+}
+
+input[type='checkbox'].jm-menu-btn ~ .jm-collapse {
+  display: none; /* Hide menu on load */
+}
+
+input[type='checkbox']:checked.jm-menu-btn ~ .jm-collapse {
+  display: block; /* Open when menu button is clicked */
+}
+
+label.jm-menu-btn {
+  color: #959595; /* Light gray */
+  cursor: pointer;
+  display: block;
+  padding: 16px 32px;
+}
+
+label.jm-menu-btn:hover {
+  color: #fff;
+}
+
+.jm-collapse {
+  /* Add border between menu and menu button when it's open */
+  border-top: 1px #959595 solid;
+}
+
+
 /* Menu Items */
-.jmenu ul {
+.jmenu ul,
+.jmenu li {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -29,34 +60,44 @@
 }
 
 /* Submenu Items */
-.jmenu ul ul  {
+.jmenu ul ul {
   display: none; /* Hidden by default */
 }
 
 /* Dropdowns */
 
-.jmenu .jm-dropdown:hover ul {
+.jm-dropdown:hover ul {
   display: block;
 }
 
-.jmenu .jm-dropdown:hover a {
+.jm-dropdown:hover a {
   /* Make top-level menu item stay highlighted when hovering over children */
   color: #fff; 
 }
 
-.jmenu .jm-dropdown ul {
+.jm-dropdown ul {
   background: #fff; /* White */
   padding: 0;
 }
 
-.jmenu .jm-dropdown ul a,
-.jmenu .jm-dropdown:hover ul a {
+.jm-dropdown ul a,
+.jm-dropdown:hover ul a {
   color: #0072bc; /* Blue */
 }
 
-.jmenu .jm-dropdown ul a:hover,
-.jmenu .jm-dropdown:hover ul a:hover{
+.jm-dropdown ul a:hover,
+.jm-dropdown:hover ul a:hover {
   color: #000; /* Black*/
+}
+
+/* Tertiary+ Menu Items */
+.jm-dropdown ul ul {
+  border-bottom: 1px #ccc solid; /* Light gray */
+  border-top: 1px #ccc solid;
+  box-shadow: none;
+  margin-bottom: 16px;
+  max-width: 100%;
+  position: relative;
 }
 
 @media (min-width: 768px) {
@@ -71,21 +112,32 @@
   }
   
   /* Dropdowns */
-  .jmenu .jm-dropdown {
+  .jm-dropdown {
     position: relative;
   }
   
-  .jmenu .jm-dropdown li a {
+  .jm-dropdown li a {
     display: block;
     padding: 8px 16px;
     white-space: nowrap;
   }
   
-  .jmenu .jm-dropdown ul {
+  .jm-dropdown ul {
     box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, .5);
     padding: 8px 0;
     position: absolute;
     min-width: 100%;
+  }
+  
+  /* Menu Button */
+  input.jm-menu-btn,
+  label.jm-menu-btn {
+    display: none; /* Hide menu button */
+  }
+  
+  input[type='checkbox'].jm-menu-btn ~ .jm-collapse,
+  .jm-collapse {
+    display: block; /* Show menu */
   }
 
 }
