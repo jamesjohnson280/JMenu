@@ -3,24 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, intitial-scale=1">
-<title>JMenu Demo</title>
+<title>JMenu Demos</title>
 <link rel="stylesheet" href="jmenu.css">
 <style>
 body {
   font: normal 1.125em/1.5 'Roboto', sans-serif;
 }
+  
 section {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
   
 .tall {
-  display: block;
-  height: 500px;
+    display: block;
+    height: 200px;
+}
+  
+@media (max-width: 768px) {
+  .tall {
+    display: block;
+    height: 400px;
+  }
 }
 </style>
 </head>
 
 <body>
+  <h1>JMenu Demos</h1>
   <section>
     <h3>Simple Menu</h3>
     <nav class="jmenu">
@@ -52,13 +61,20 @@ section {
     <p>Fee fi fo fum, I smell the blood of an Englishman!</p>
   </section>
   <section class="tall">
-    <h3>Simple Menu with Menu Button</h3>
+    <h3>Menu with Menu Button</h3>
     <nav class="jmenu">
       <input type="checkbox" id="menu-btn" class="jm-menu-btn">
       <label for="menu-btn" class="jm-menu-btn">Menu</label>
       <ul class="jm-collapse">
         <li><a href="#">Home</a></li>
-        <li><a href="#">Categories</a></li>
+        <li class="jm-dropdown">
+          <a href="#">Categories</a>
+          <ul>
+            <li><a href="#">Apples</a></li>
+            <li><a href="#">Bananas and Pears</a></li>
+            <li><a href="#">Oranges</a></li>
+          </ul>
+        </li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
