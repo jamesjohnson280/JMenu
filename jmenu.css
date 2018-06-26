@@ -12,16 +12,17 @@
 .jmenu ul {
   list-style: none;
   margin: 0;
-  padding: 16px;
+  padding: 16px 0;
 }
 
 .jmenu li {
-  padding: 16px;
+  padding: 16px 0;
 }
 
 /* Links */
 .jmenu a {
   color: #959595; /* Light gray */
+  padding-left: 32px;
   text-decoration: none;
 }
 
@@ -29,6 +30,40 @@
   color: #fff; /* White */
 }
 
+/* Submenu Items */
+.jmenu ul ul  {
+  display: none; /* Hidden by default */
+}
+
+/* Dropdowns */
+.jmenu .jm-dropdown ul {
+  background: #fff; /* White */
+  display: none;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.jmenu .jm-dropdown ul a {
+  color: #0072bc; /* Blue */
+}
+
+.jmenu ul:hover .jm-dropdown ul {
+  display: block;
+}
+
+.jmenu .jm-dropdown:hover a {
+  /* Make sure parent menu item stays 
+  selected when hovering children */
+  color: #fff; 
+}
+
+.jmenu .jm-dropdown:hover ul a {
+  color: #0072bc; /* Blue */
+}
+
+.jmenu .jm-dropdown:hover ul a:hover {
+  color: #000; /* Black */
+}
 
 @media (min-width: 768px) {
   
@@ -36,5 +71,19 @@
   .jmenu li {
     display: inline-block;
     padding: 0 16px;
+  }
+  
+  /* Dropdowns */
+  .jmenu .jm-dropdown {
+    position: relative;
+  }
+  
+  .jmenu .jm-dropdown ul {
+    position: absolute;
+    width: 100%;
+  }
+  
+  .jmenu .jm-dropdown ul li {
+    padding: 16px 0;
   }
 }
