@@ -9,17 +9,41 @@
 body {
   font: normal 1.125em/1.5 'Roboto', sans-serif;
 }
+section {
+  margin-bottom: 100px;
+}
 </style>
 </head>
 
 <body>
-  <nav class="jmenu">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Categories</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
+  <section>
+    <h3>Simple Menu</h3>
+    <nav class="jmenu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </section>
+  <section>
+    <h3>Menu with Dropdown</h3>
+    <nav class="jmenu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li class="jm-dropdown">
+          <a href="#">Categories</a>
+          <ul>
+            <li><a href="#">Apples</a></li>
+            <li><a href="#">Bananas</a></li>
+            <li><a href="#">Oranges</a></li>
+          </ul>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </section>
 </body>
 </html>
