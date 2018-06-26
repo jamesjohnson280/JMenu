@@ -15,12 +15,12 @@ easy to customize.
 
 ```
 <nav class="jmenu">
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Categories</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Categories</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
 </nav>
 ```
 
@@ -34,7 +34,7 @@ change that by overriding the `.jmenu` class.
 
 ```
 .jmenu {
-    font: bold 1.125em 'Helvetica', sans-serif;
+  font: bold 1.125em 'Helvetica', sans-serif;
 }
 ```
 
@@ -43,11 +43,11 @@ new colors.
 
 ```
 .jmenu a {
-    color: coral;
+  color: coral;
 }
 
 .jmenu a:hover {
-    color: red;
+  color: red;
 }
 ```
 
@@ -57,7 +57,7 @@ To change the look of the menu bar override the background style of the
 `.jmenu` class.
 ``` 
 .jmenu {
-    background: #ccc; /* Changes menu bar to a light gray */
+  background: #ccc; /* Changes menu bar to a light gray */
 }
 ```
 
