@@ -10,26 +10,26 @@
 }
 
 /* Menu Button */
-.jmenu input.jm-menu-btn {
+input.jm-menu-btn {
   display: none; /* Hide the checkbox */
 }
 
-.jmenu input[type='checkbox'].jm-menu-btn ~ .jm-collapse {
+input[type='checkbox'].jm-menu-btn ~ .jm-collapse {
   display: none; /* Hide menu on load */
 }
 
-.jmenu input[type='checkbox']:checked.jm-menu-btn ~ .jm-collapse {
+input[type='checkbox']:checked.jm-menu-btn ~ .jm-collapse {
   display: block; /* Open when menu button is clicked */
 }
 
-.jmenu label.jm-menu-btn {
+label.jm-menu-btn {
   color: #959595; /* Light gray */
   cursor: pointer;
   display: block;
   padding: 16px 32px;
 }
 
-.jmenu label.jm-menu-btn:hover {
+label.jm-menu-btn:hover {
   color: #fff;
 }
 
@@ -66,32 +66,32 @@
 
 /* Dropdowns */
 
-.jmenu .jm-dropdown:hover ul {
+.jm-dropdown:hover ul {
   display: block;
 }
 
-.jmenu .jm-dropdown:hover a {
+.jm-dropdown:hover a {
   /* Make top-level menu item stay highlighted when hovering over children */
   color: #fff; 
 }
 
-.jmenu .jm-dropdown ul {
+.jm-dropdown ul {
   background: #fff; /* White */
   padding: 0;
 }
 
-.jmenu .jm-dropdown ul a,
-.jmenu .jm-dropdown:hover ul a {
+.jm-dropdown ul a,
+.jm-dropdown:hover ul a {
   color: #0072bc; /* Blue */
 }
 
-.jmenu .jm-dropdown ul a:hover,
-.jmenu .jm-dropdown:hover ul a:hover{
+.jm-dropdown ul a:hover,
+.jm-dropdown:hover ul a:hover{
   color: #000; /* Black*/
 }
 
 /* Tertiary+ Menu Items */
-.jmenu .jm-dropdown ul ul {
+.jm-dropdown ul ul {
   border-bottom: 1px #ccc solid; /* Light gray */
   border-top: 1px #ccc solid;
   box-shadow: none;
@@ -112,17 +112,17 @@
   }
   
   /* Dropdowns */
-  .jmenu .jm-dropdown {
+  .jm-dropdown {
     position: relative;
   }
   
-  .jmenu .jm-dropdown li a {
+  .jm-dropdown li a {
     display: block;
     padding: 8px 16px;
     white-space: nowrap;
   }
   
-  .jmenu .jm-dropdown ul {
+  .jm-dropdown ul {
     box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, .5);
     padding: 8px 0;
     position: absolute;
@@ -130,13 +130,13 @@
   }
   
   /* Menu Button */
-  .jmenu input.jm-menu-btn,
-  .jmenu label.jm-menu-btn {
+  input.jm-menu-btn,
+  label.jm-menu-btn {
     display: none; /* Hide menu button */
   }
   
-  .jmenu input[type='checkbox'].jm-menu-btn ~ .jm-collapse,
-  .jmenu .jm-collapse {
+  input[type='checkbox'].jm-menu-btn ~ .jm-collapse,
+  .jm-collapse {
     display: block; /* Show menu */
   }
 
