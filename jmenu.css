@@ -9,6 +9,35 @@
   line-height: 1;
 }
 
+/* Menu Button */
+.jmenu input.jm-menu-btn {
+  display: none; /* Hide the checkbox */
+}
+
+.jmenu input[type='checkbox'].jm-menu-btn ~ .jm-collapse {
+  display: none; /* Hide menu on load */
+}
+
+.jmenu input[type='checkbox']:checked.jm-menu-btn ~ .jm-collapse {
+  display: block; /* Open when menu button is clicked */
+}
+
+.jmenu label.jm-menu-btn {
+  color: #959595; /* Light gray */; /* white */
+  display: block;
+  padding: 16px 32px;
+}
+
+.jmenu label.jm-menu-btn:hover {
+  color: #fff;
+}
+
+.jm-collapse {
+  /* Add border between menu and menu button when it's open */
+  border-top: 1px #959595 solid;
+}
+
+
 /* Menu Items */
 .jmenu ul {
   list-style: none;
@@ -96,6 +125,17 @@
     padding: 8px 0;
     position: absolute;
     min-width: 100%;
+  }
+  
+  /* Menu Button */
+  .jmenu input.jm-menu-btn,
+  .jmenu label.jm-menu-btn {
+    display: none; /* Hide menu button */
+  }
+  
+  .jmenu input[type='checkbox'].jm-menu-btn ~ .jm-collapse,
+  .jmenu .jm-collapse {
+    display: block; /* Show menu */
   }
 
 }
