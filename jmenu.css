@@ -1,0 +1,91 @@
+/* JMenu 1.0 | MIT License | https://github.com/jamesjohnson280/JMenu */
+
+
+/* Menu bar and fonts */
+.jmenu {
+  background: #252525; /* Dark gray */
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, .5);
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+/* Menu Items */
+.jmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Links */
+.jmenu a {
+  color: #959595; /* Light gray */
+  display: block;
+  padding: 16px 0 16px 32px;
+  text-decoration: none;
+}
+
+.jmenu a:hover {
+  color: #fff; /* White */
+}
+
+/* Submenu Items */
+.jmenu ul ul  {
+  display: none; /* Hidden by default */
+}
+
+/* Dropdowns */
+
+.jmenu .jm-dropdown:hover ul {
+  display: block;
+}
+
+.jmenu .jm-dropdown:hover a {
+  /* Make top-level menu item stay highlighted when hovering over children */
+  color: #fff; 
+}
+
+.jmenu .jm-dropdown ul {
+  background: #fff; /* White */
+  padding: 0;
+}
+
+.jmenu .jm-dropdown ul a,
+.jmenu .jm-dropdown:hover ul a {
+  color: #0072bc; /* Blue */
+}
+
+.jmenu .jm-dropdown ul a:hover,
+.jmenu .jm-dropdown:hover ul a:hover{
+  color: #000; /* Black*/
+}
+
+@media (min-width: 768px) {
+  
+  /* Menu items */
+  .jmenu li {
+    display: inline-block;
+  }
+  
+  .jmenu a {
+    padding: 16px;
+  }
+  
+  /* Dropdowns */
+  .jmenu .jm-dropdown {
+    position: relative;
+  }
+  
+  .jmenu .jm-dropdown li a {
+    display: block;
+    padding: 8px 16px;
+    white-space: nowrap;
+  }
+  
+  .jmenu .jm-dropdown ul {
+    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, .5);
+    padding: 8px 0;
+    position: absolute;
+    min-width: 100%;
+  }
+
+}
