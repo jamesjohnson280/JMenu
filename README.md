@@ -127,6 +127,19 @@ new colors.
 }
 ```
 
+To change the colors of dropdown links it's a little more involved. 
+```css
+.jm-dropdown ul a,
+.jm-dropdown:hover ul a {
+  color: #0072bc; /* Blue */
+}
+
+.jm-dropdown ul a:hover,
+.jm-dropdown:hover ul a:hover {
+  color: #000; /* Black*/
+}
+```
+
 ### Menu Bar
 
 To change the look of the menu bar override the background style of the
@@ -136,6 +149,11 @@ To change the look of the menu bar override the background style of the
   background: #ccc; /* Changes menu bar to a light gray */
 }
 ```
+
+### Dropdowns
+
+Override the `.jm-dropown ul` class to change the styling of the dropdowns.
+
 
 ## Compatibility
 
