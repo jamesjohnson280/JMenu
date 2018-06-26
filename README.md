@@ -29,8 +29,8 @@ easy to customize.
 ### Typography
 
 JMenu is designed to pick up typographic styles from your website's
-stylesheet. By default the menu items will inherit your `body` style. You can 
-change them by overriding the `.jmenu` class.
+stylesheet. By default the menu items will inherit the `body` style. You can 
+change that by overriding the `.jmenu` class.
 
 ```
 .jmenu {
@@ -39,7 +39,7 @@ change them by overriding the `.jmenu` class.
 ```
 
 To change the color of the menu item links, simply override `.jmenu a` with 
-your colors.
+new colors.
 
 ```
 .jmenu a {
@@ -53,7 +53,7 @@ your colors.
 
 ### Menu Bar
 
-To change the style of the menu bar override the background style of the
+To change the look of the menu bar override the background style of the
 `.jmenu` class.
 ``` 
 .jmenu {
