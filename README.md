@@ -61,3 +61,12 @@ To change the look of the menu bar override the background style of the
 }
 ```
 
+## Compatibility
+
+JMenu has been tested in the following browsers:
+* Chrome
+* Firefox 60
+* Safari
+* Internet Explorer 10
+* Edge 42
+
