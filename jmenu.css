@@ -39,16 +39,23 @@
   display: block;
 }
 
+.jmenu .jm-dropdown:hover a {
+  /* Make top-level menu item stay highlighted when hovering over children */
+  color: #fff; 
+}
+
 .jmenu .jm-dropdown ul {
   background: #fff; /* White */
   padding: 0;
 }
 
-.jmenu .jm-dropdown ul a {
+.jmenu .jm-dropdown ul a,
+.jmenu .jm-dropdown:hover ul a {
   color: #0072bc; /* Blue */
 }
 
-.jmenu .jm-dropdown ul a:hover {
+.jmenu .jm-dropdown ul a:hover,
+.jmenu .jm-dropdown:hover ul a:hover{
   color: #000; /* Black*/
 }
 
