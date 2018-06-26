@@ -4,6 +4,7 @@
 /* Menu bar and fonts */
 .jmenu {
   background: #252525; /* Dark gray */
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, .5);
   box-sizing: border-box;
   line-height: 1;
 }
@@ -12,17 +13,14 @@
 .jmenu ul {
   list-style: none;
   margin: 0;
-  padding: 16px 0;
-}
-
-.jmenu li {
-  padding: 16px 0;
+  padding: 0;
 }
 
 /* Links */
 .jmenu a {
   color: #959595; /* Light gray */
-  padding-left: 32px;
+  display: block;
+  padding: 16px 0 16px 32px;
   text-decoration: none;
 }
 
@@ -36,10 +34,13 @@
 }
 
 /* Dropdowns */
+
+.jmenu .jm-dropdown:hover ul {
+  display: block;
+}
+
 .jmenu .jm-dropdown ul {
   background: #fff; /* White */
-  display: none;
-  margin-top: 16px;
   padding: 0;
 }
 
@@ -47,22 +48,8 @@
   color: #0072bc; /* Blue */
 }
 
-.jmenu ul:hover .jm-dropdown ul {
-  display: block;
-}
-
-.jmenu .jm-dropdown:hover a {
-  /* Make sure parent menu item stays 
-  selected when hovering children */
-  color: #fff; 
-}
-
-.jmenu .jm-dropdown:hover ul a {
-  color: #0072bc; /* Blue */
-}
-
-.jmenu .jm-dropdown:hover ul a:hover {
-  color: #000; /* Black */
+.jmenu .jm-dropdown ul a:hover {
+  color: #000; /* Black*/
 }
 
 @media (min-width: 768px) {
@@ -70,7 +57,10 @@
   /* Menu items */
   .jmenu li {
     display: inline-block;
-    padding: 0 16px;
+  }
+  
+  .jmenu a {
+    padding: 16px;
   }
   
   /* Dropdowns */
@@ -78,12 +68,17 @@
     position: relative;
   }
   
-  .jmenu .jm-dropdown ul {
-    position: absolute;
-    width: 100%;
+  .jmenu .jm-dropdown li a {
+    display: block;
+    padding: 8px 16px;
+    white-space: nowrap;
   }
   
-  .jmenu .jm-dropdown ul li {
-    padding: 16px 0;
+  .jmenu .jm-dropdown ul {
+    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, .5);
+    padding: 8px 0;
+    position: absolute;
+    min-width: 100%;
   }
+
 }
