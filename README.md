@@ -104,7 +104,7 @@ easy to customize.
 ### Typography
 
 JMenu is designed to pick up typographic styles from your website's
-stylesheet. By default the menu items will inherit the `body` style. You can 
+stylesheet. By default the menu items will inherit their parent container's style. You can 
 change that by overriding the `.jmenu` class.
 
 ```css
