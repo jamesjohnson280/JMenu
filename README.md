@@ -202,7 +202,7 @@ Override the `.jm-dropown ul` class to change the styling of the dropdowns.
 ## Compatibility
 
 JMenu has been tested in the following browsers:
-* Chrome 67 (Mobile and Desktop
+* Chrome 67 (Mobile and Desktop)
 * Firefox 60
 * Safari 11 (Mobile and Desktop)
 * Internet Explorer 10
