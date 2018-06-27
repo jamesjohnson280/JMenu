@@ -127,7 +127,9 @@ new colors.
 }
 ```
 
-To change the colors of dropdown links it's a little more involved. 
+To change the colors of dropdown links it's a little more involved. Make sure
+you override both selectors for the dropdown links or they won't display 
+properly.
 ```css
 .jm-dropdown ul a,
 .jm-dropdown:hover ul a {
