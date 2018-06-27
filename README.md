@@ -8,7 +8,7 @@ easy to customize.
 
 1. Add the JMenu stylesheet to the header of your site:
 ```html
-<link rel="stylesheet" href="css/jmenu.css">
+<link rel="stylesheet" href="css/jmenu.min.css">
 ```
 
 2. Add the basic markup for your menu:
@@ -56,13 +56,33 @@ easy to customize.
 </nav>
 ```
 
+3. (Optional) Add a caret to the dropdown with a span styled 
+`jm-icon-dropdown`:
+```html
+<nav class="jmenu">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li class="jm-dropdown">
+      <a href="#">Categories <span class="jm-icon-dropdown"></span></a>
+      <ul>
+        <li><a href="#">Apples</a></li>
+        <li><a href="#">Bananas and Pears</a></li>
+        <li><a href="#">Oranges</a></li>
+      </ul>
+    </li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+```
+
 ### Menu Button 
 1. To create a menu button add a checkbox and label before the first menu 
 list. Make sure they have the class `.jm-menu-btn`:
 ```html
 <nav class="jmenu">
-  <input type="checkbox" id="menu-btn" class="jm-menu-btn">
   <label for="menu-btn" class="jm-menu-btn">Menu</label>
+  <input type="checkbox" id="menu-btn" class="jm-menu-btn">
   <ul>
     <li><a href="#">Home</a></li>
     <li class="jm-dropdown">
@@ -82,8 +102,30 @@ list. Make sure they have the class `.jm-menu-btn`:
 2. Add the `.jm-collapse` class to the menu list:
 ```html
 <nav class="jmenu">
-  <input type="checkbox" id="menu-btn" class="jm-menu-btn">
   <label for="menu-btn" class="jm-menu-btn">Menu</label>
+  <input type="checkbox" id="menu-btn" class="jm-menu-btn">
+  <ul class="jm-collapse">
+    <li><a href="#">Home</a></li>
+    <li class="jm-dropdown">
+      <a href="#">Categories</a>
+      <ul>
+        <li><a href="#">Apples</a></li>
+        <li><a href="#">Bananas and Pears</a></li>
+        <li><a href="#">Oranges</a></li>
+      </ul>
+    </li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+```
+
+3. (Optional) To add a hamburger icon, add the `jm-icon-menu` class to the 
+button label:
+```html
+<nav class="jmenu">
+  <label for="menu-btn" class="jm-menu-btn jm-icon-menu">Menu</label>
+  <input type="checkbox" id="menu-btn" class="jm-menu-btn">
   <ul class="jm-collapse">
     <li><a href="#">Home</a></li>
     <li class="jm-dropdown">
@@ -127,7 +169,9 @@ new colors.
 }
 ```
 
-To change the colors of dropdown links it's a little more involved. 
+To change the colors of dropdown links it's a little more involved. Make sure
+you override both selectors for the dropdown links or they won't display 
+properly.
 ```css
 .jm-dropdown ul a,
 .jm-dropdown:hover ul a {
@@ -158,9 +202,9 @@ Override the `.jm-dropown ul` class to change the styling of the dropdowns.
 ## Compatibility
 
 JMenu has been tested in the following browsers:
-* Chrome 67 (Windows, Mac OS and Android)
+* Chrome 67 (Mobile and Desktop
 * Firefox 60
-* Safari 11
-* Internet Explorer 10 (Mac OS and iOS)
-* Edge 42
+* Safari 11 (Mobile and Desktop)
+* Internet Explorer 10
+* Edge 42 
 

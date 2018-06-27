@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>JMenu Demos</title>
-<link rel="stylesheet" href="jmenu.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" href="jmenu.min.css">
 <style>
 body {
   font: normal 1.125em/1.5 'Roboto', sans-serif;
@@ -17,6 +18,7 @@ section {
 .tall {
   display: inline-block;
   width: 100%;
+  height: 200px;
   margin-bottom: 100px;
 }
   
@@ -47,7 +49,7 @@ section {
       <ul>
         <li><a href="#">Home</a></li>
         <li class="jm-dropdown">
-          <a href="javascript:void(0)">Categories</a>
+          <a href="javascript:void(0)">Categories<span class="jm-icon-dropdown"></span></a>
           <ul>
             <li><a href="javascript:void(0)">Apples</a></li>
             <li><a href="javascript:void(0)">Bananas and Pears</a></li>
@@ -58,13 +60,13 @@ section {
         <li><a href="javascript:void(0)">Contact</a></li>
       </ul>
     </nav>
-    <p>Fee fi fo fum, I smell the blood of an Englishman!</p>
+    <p>Notice how the dropdown floats over this text on desktop?</p>
   </section>
   <section class="tall">
     <h3>Menu with Menu Button</h3>
     <nav class="jmenu">
+      <label for="menu-btn" class="jm-menu-btn jm-icon-menu"></label>
       <input type="checkbox" id="menu-btn" class="jm-menu-btn">
-      <label for="menu-btn" class="jm-menu-btn">Menu</label>
       <ul class="jm-collapse">
         <li><a href="javascript:void(0)">Home</a></li>
         <li class="jm-dropdown">
