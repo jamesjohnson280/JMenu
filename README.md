@@ -8,7 +8,7 @@ easy to customize.
 
 1. Add the JMenu stylesheet to the header of your site:
 ```html
-<link rel="stylesheet" href="css/jmenu.css">
+<link rel="stylesheet" href="css/jmenu.min.css">
 ```
 
 2. Add the basic markup for your menu:
